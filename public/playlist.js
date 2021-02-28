@@ -15,7 +15,7 @@ icon1.onclick = function() {
 let mySongs2 = document.getElementById("mySongs2");
 let icon2 = document.getElementById("icon2");
 
-icon1.onclick = function() {
+icon2.onclick = function() {
     if (mySongs2.paused) {
         mySongs2.play();
     }else 
@@ -54,7 +54,7 @@ icon4.onclick = function() {
 let mySongs5 = document.getElementById("mySongs5");
 let icon5 = document.getElementById("icon5");
 
-icon1.onclick = function() {
+icon5.onclick = function() {
     if (mySongs5.paused) {
         mySongs5.play();
     }else 
