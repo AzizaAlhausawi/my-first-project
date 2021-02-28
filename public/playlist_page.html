@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music lists</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body style="background-image: url(images/1490237.jpg);background-attachment: local;background-size: cover;">
+   <!--navigation section-->
+   
+   <header class="bg-gradient-to-r from-purple-500 to-yellow-600 border-4 border-yellow-100 flex justify-around rounded-lg mt-6 mx-60 ">
+    <a href="Home_Page.html"><img src="images/logo2.jpg" alt="main logo" class="pr-10 py-5"></a>
+            <nav class="text-black-500 font-bold font-mono text-xl ">
+             <img src="https://media.giphy.com/media/1Bpl7QvNHIIzjacxWI/giphy.gif" alt="gif" class="h-36 mx-auto">
+                <ul class="mt-10 flex gap-x-2">
+                 <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-purple-600 transform hover:-translate-y-1 hover:scale-110 border-separate border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-10">Home</li></a>
+                 <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-yellow-600 transform hover:-translate-y-1 hover:scale-110 border- border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-9">About</li></a>
+                 <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-purple-600 transform hover:-translate-y-1 hover:scale-110 border-separate border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-2">contact us</li></a>
+                </ul>
+             </nav>
+    <div><a href="Regester_page.html"><button class="border bg-purple-300 transition ease-in-out duration-500 hover:bg-purple-600 hover:text-white py-2 px-7 mt-24 text-purple-600 rounded-full ring ring-purple-600 ring-offset-4 animate-pulse font-bold">Start Now</button></a></div>
+</header>
+
+<!--playlists-->
+<h1 class="bg-white font-bold font-mono text-3xl w-max mx-auto mt-10 text-purple-600 border bg-purple-300 py-2 px-7 rounded-md ring ring-purple-600 ring-offset-4 animate-pulse">Play some music</h1>
+<section class="grid grid-cols-3 gap-y-20 gap-x-20 max-w-max mx-auto my-20 border-4 border-purple-600 bg-yellow-100 bg-opacity-70 shadow-2xl pt-5 pb-28 px-10 rounded-lg">
+    <div class="w-60 h-60 border-4 border-yellow-500"><div class="relative"><img src="images/Halsey - Still Learning.jpg" class=""><button id="icon1" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><a href="https://www.youtube.com/watch?v=ZQxUj1lrFFo&ab_channel=SyrebralVibes"><p class="text-center font-mono mt-5 ">Halsey - Still Learning</p></a>
+      <audio id="mySongs1">
+          <source src="media/Halsey - Still Learning.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div class="w-60 h-60 border-4 border-yellow-500 "><div class="relative"><img src="images/STARSET - Monster.jpg" class="h-56 pt-2"><button id="icon2" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><a href="https://www.youtube.com/watch?v=hyfV0GBe18w&ab_channel=Coraline"><p class="text-center font-mono mt-5 ">STARSET - Monster</p></a>
+      <audio id="mySongs2">
+          <source src="media/STARSET - Monster.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div class="w-60 h-60 border-4 border-yellow-500"><div class="relative"><img src="images/Christina Perri - A Thousand Years.jpg"><button id="icon3" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><a href="https://www.youtube.com/watch?v=rtOvBOTyX00&ab_channel=ChristinaPerri"><p class="text-center font-mono mt-5 ">Christina Perri - A Thousand Years</p></a>
+      <audio id="mySongs3">
+          <source src="media/Christina Perri - A Thousand Years.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div class="w-60 h-60 border-4 border-yellow-500"><div class="relative"><img src="images/astro.png"><a href="https://www.youtube.com/watch?v=ay_aDjEv-7E&ab_channel=KortenGames"><button id="icon4" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><p class="text-center font-mono mt-5 ">Astro Bot Rescue Mission-Soundtrack-I am ASTRO BOT-By Kenneth C M Young</p></a>
+      <audio id="mySongs4">
+          <source src="media/Astro Bot Rescue Mission - Soundtrack - I am ASTRO BOT  - By Kenneth C M Young.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div class="w-60 h-60 border-4 border-yellow-500"><div class="relative"><img src="images/Make Me Move.jpg"><button id="icon5" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><a href="https://www.youtube.com/watch?v=vBGiFtb8Rpw&ab_channel=NoCopyrightSounds"><p class="text-center font-mono mt-5 ">Culture Code - Make Me Move (feat. Karra)</p></a>
+      <audio id="mySongs5">
+          <source src="media/Culture Code - Make Me Move (feat. Karra).mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div class="w-60 h-60 border-4 border-yellow-500"><div class="relative"><img src="images/Rimshox Ft. Veela - Another Dare.jpg" class="h-56 pt-2"><button id="icon" class="text-5xl absolute top-24 left-20 opacity-0 transition ease-in-out duration-500 hover:opacity-90">&#127911</button></div><a href="https://www.youtube.com/watch?v=lfHyjCeZdnw&ab_channel=Liquiddnbftw"><p class="text-center font-mono mt-5 ">Rimshox Ft. Veela - Another Dare</p></a>
+      <audio id="mySongs6">
+          <source src="media/Rimshox Ft. Veela - Another Dare.mp3" type="audio/mp3">
+      </audio>
+</div>
+</section>
+
+    <!--footer-->
+    <footer class="bg-gradient-to-r from-purple-600 to-yellow-500 border-4 border-yellow-100 flex  justify-around rounded-lg mx-20 mb-6">
+        <div><img src="images/logo2.jpg" alt="main logo"class=" py-5"></div>
+        <div class="space-y-24 "><ul class="mt-10 text-black-500 font-bold font-mono text-center text-xl pl-10 ">
+            <li>Q&A</li>
+            <li>custemer servece</li>
+        </ul>
+        <dir class=" font-bold text-xs">2021 Aziza. All rights reserved &#128526</dir>
+        </div>
+        <nav>
+           <ul class=" flex border-double border-b-8 border-black mt-20 mb-6 pb-3 ">
+              <li><a href="https://www.instagram.com/ggamersea/"><img src="images/instagram.png" alt=""class="w-18 h-16 bg-opacity-100"></a></li>
+              <li><a href="https://twitter.com/GGamersEA"><img src="images/twitter.png" alt="" class="w-20 h-17 pl-3"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw"><img src="images/youtube.png" alt="" class="w-20 h-17 pl-3"></a></li>
+           </ul>
+        </nav>
+ </footer>
+ <script src="playlist.js"></script>
+</body>
+
+</html>
