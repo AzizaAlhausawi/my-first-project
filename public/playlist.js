@@ -5,7 +5,7 @@ let icon1 = document.getElementById("icon1");
 icon1.onclick = function() {
     if (mySongs1.paused) {
         mySongs1.play();
-    }else 
+    }else
     {mySongs1.pause();
    
     }
