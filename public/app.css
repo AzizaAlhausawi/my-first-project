@@ -585,8 +585,38 @@ video {
   }
 }
 
-.background{
-  color: aliceblue;
+.section{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 5rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 5rem auto;
+  border-width: 4px;
+  border-color: rgba(124, 58, 237);
+  background-color: rgba(254, 243, 199);
+  background-opacity: 0.7;
+  shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1.25rem 2.5rem 7rem 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.button{
+  font-size: 3rem;
+  line-height: 1;
+  position: absolute;
+  top: 6rem;
+  left: 5rem;
+  opacity: 0;
+}
+
+.button:hover{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  opacity: 0.9;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
