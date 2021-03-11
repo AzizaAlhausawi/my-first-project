@@ -1,6 +1,108 @@
 @tailwind base;
 @tailwind components;
+.body{
+    
+}
+.body-animated{
+    margin: 0;
+    padding: 0; 
+    background-image: url(images/1.JPG);
+    background-size: cover;
+    background-position: center;
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    transition: 3s;
+    
+    animation-name: animate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
 
+}
+
+.header{
+    background-image: linear-gradient( #AE7CE8,#000000);
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0.50rem;
+}  
+.footer{
+    background-image: linear-gradient(#000000,#AE7CE8);
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 0.50rem;
+}
+.image{
+    
+    background-image: url(images/1.JPG);
+    background-size: cover;
+    background-position: center;
+    padding-top: 13rem;
+    padding-bottom: 8rem;
+    margin-top: 10px;
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+    transition: 3s;
+    
+    animation-name: animate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    
+
+}
+@keyframes animate{
+    0%{
+        background-image: url(images/1.JPG);
+    }
+    20%{
+        background-image: url(images/2.JPG);
+    }
+    40%{
+        background-image: url(images/3.JPG);
+    }
+    60%{
+        background-image: url(images/4.JPG);
+    }
+    80%{
+        background-image: url(images/5.JPG);
+    }
+    100%{
+        background-image: url(images/6.JPG);
+    }
+}
+.feature-section{
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 10px;
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: monospace;
+    background-color: #0E0D12;
+}
 .section{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -9,8 +111,8 @@
     max-width: max-content;
     margin: 5rem auto;
     border-width: 4px;
-    border-color: rgba(124, 58, 237);
-    background-color: rgba(254, 243, 199);
+    border-color:white;
+    background-color:black;
     background-opacity: 0.7;
     shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     padding: 1.25rem 2.5rem 7rem 2.5rem;
@@ -18,11 +120,12 @@
 }
 
 .button{
-    font-size: 3rem;
+    height: 70px;
+    width: 80px;
     line-height: 1;
     position: absolute;
-    top: 6rem;
-    left: 5rem;
+    top: 35%;
+    left: 35%;
     opacity: 0; 
 }
 
@@ -34,3 +137,15 @@
     
 
 @tailwind utilities;
+@layer components{
+    .logo{
+        @apply h-44 mt-5 bg-white rounded-3xl p-5;
+    }
+    .button-tran{
+        @apply text-yellow-900 transition duration-500 ease-in-out bg-purple-300 hover:bg-yellow-900 hover:text-white transform hover:-translate-y-1 hover:scale-110 border-solid border-4 border-white rounded-t-lg bg-purple-300 py-1 px-5;
+    }
+    .feature{
+        @apply animate-pulse bg-white border-8 border-yellow-900 border-double mt-16 p-5;
+    }
+    
+}

@@ -6,9 +6,10 @@
         button.addEventListener('click', function(){
             if(songs[index].paused) {
                 songs.forEach(song => song.pause())
-                songs[index].play(); 
+                songs[index].play();
             }else {
                 songs[index].pause();
+                
             }
         });
     });

@@ -2,46 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Regester</title>
     <link rel="stylesheet" href="app.css">
 </head>
-<body style="background-image: url(images/1490237.jpg);background-attachment: local;background-size: cover;">
+<body class="body-animated">
    <!--navigation section-->
-    <header class="bg-gradient-to-r from-purple-500 to-yellow-600 border-4 border-yellow-100 flex justify-around rounded-lg mt-6 mx-60 ">
-           <a href="Home_Page.html"><img src="images/logo2.jpg" alt="main logo" class="pr-10 py-5"></a>
-                   <nav class="text-black-500 font-bold font-mono text-xl ">
-                    
-                       <ul class="mt-48 flex gap-x-2">
-                        <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-purple-600 transform hover:-translate-y-1 hover:scale-110 border-separate border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-10">Home</li></a>
-                        <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-yellow-600 transform hover:-translate-y-1 hover:scale-110 border- border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-9">About</li></a>
-                        <a href="Home_Page.html"><li class="transition duration-500 ease-in-out bg-purple-300 hover:bg-purple-600 transform hover:-translate-y-1 hover:scale-110 border-separate border-4 border-yellow-100 rounded-t-lg bg-purple-300 py-1 px-2">contact us</li></a>
-                       </ul>
-                    </nav>
+   <header class="header">
+    <a href="Home_Page.html"><img src="images/main loge.png" alt="main logo" class="logo"></a>
+            <nav class="text-black-500 font-bold font-mono text-xl ">
+             <img src="https://media.giphy.com/media/1Bpl7QvNHIIzjacxWI/giphy.gif" alt="gif" class="h-36 mx-auto">
+                <ul class="mt-10 flex gap-x-2">
+                 <a href="Home_Page.html"><li class="button-tran">Home</li></a>
+                 <a href="Home_Page.html"><li class="button-tran">About</li></a>
+                 <a href="Home_Page.html"><li class="button-tran">contact</li></a>
+                </ul>
+             </nav>
            <div><img src="images/giphy (2).gif" alt="gif" class="h-36 pt-6 mt-6"></div>
     </header>
     <!--regester section-->
      
-   <h1 class="font-bold font-mono text-3xl w-max mx-auto mt-10 text-purple-600 border bg-purple-300 py-2 px-7 rounded-md ring ring-purple-600 ring-offset-4 animate-pulse">Regester Form</h1>
-<main class="bg-white max-w-lg mx-auto border-4 border-purple-600 bg-yellow-100 bg-opacity-70 shadow-2xl text-purple-600 p-8 my-10 rounded-lg">
+   <h1 class="font-bold font-mono text-3xl w-max mx-auto mt-10 text-yellow-900 border bg-purple-300 py-2 px-7 rounded-md ring ring-yellow-900 ring-offset-4 animate-pulse">Regester Form</h1>
+<main class="bg-black max-w-lg mx-auto border-4 border-white shadow-2xl text-white p-8 my-10 rounded-lg">
    <section class="">
    <p class="font-simebold font-mono text-center ">Welcome to MUSUCAll</p>
 
    <form action="" class="flex-col font-bold text-sm pt-5">
-    <div class="bg-yellow-500 rounded pt-3 mx-10 mb-3">
+    <div class="bg-yellow-900 rounded pt-3 mx-10 mb-3">
         <label for="Name" class="block mb-2 pl-3">Name</label>
-        <input type="text" id="Name" class="bg-yellow-500 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-yellow-600 focus:border-purple-700 transition duration-500 focus:outline-none placeholder-gray-500 placeholder-opacity-80 text-sm" placeholder="Your Name"size="40">
+        <input type="text" id="Name" class="bg-yellow-900 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-purple-700 focus:border-white transition duration-500 focus:outline-none placeholder-gray-500 placeholder-opacity-80 text-sm" placeholder="Your Name"size="40">
     </div>
     <div class="bg-purple-400 rounded pt-3 mx-10 mb-3">
         <label for="Email"class="block mb-2 pl-3">Email</label>
-        <input type="email" id="Email"class="bg-purple-400 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-purple-600 focus:border-yellow-700 transition duration-500 focus:outline-none placeholder-gray-500 placeholder-opacity-100 text-sm" placeholder="example@example.com" size="40">
+        <input type="email" id="Email"class="bg-purple-400 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-yellow-900 focus:border-white transition duration-500 focus:outline-none placeholder-gray-500 placeholder-opacity-100 text-sm" placeholder="example@example.com" size="40">
     </div>
-    <div class="bg-yellow-500 rounded pt-3 mx-10 mb-3">
+    <div class="bg-yellow-900 rounded pt-3 mx-10 mb-3">
         <label for="Password"class="block mb-2 pl-3">Password</label>
-        <input type="password"id="Password"class="bg-yellow-500 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-yellow-600 focus:border-purple-700 transition duration-500 placeholder-gray-500 placeholder-opacity-80 text-sm" placeholder="********" size="20">
+        <input type="password"id="Password"class="bg-yellow-900 rounded w-full pl-3 pb-2 focus:outline-none border-b-4 border-purple-700 focus:border-white transition duration-500 placeholder-gray-500 placeholder-opacity-80 text-sm" placeholder="********" size="20">
     </div>
     <div class="flex justify-center gap-x-10">
-     <div><button class="border bg-purple-300 transition ease-in-out duration-500 hover:bg-purple-600 hover:text-white py-2 px-7 mt-3 text-sm text-purple-600 rounded-full ring ring-purple-600 ring-offset-4 font-bold">Let's Go</button></div>
-     <div><img src="images/giphy (1).gif" alt="gif" class="h-20"></div>
+     <div><button class="border bg-purple-300 transition ease-in-out duration-500 hover:bg-yellow-900 hover:text-white py-2 px-7 mt-3 text-sm text-yellow-900 rounded-full ring ring-yellow-900 ring-offset-4 font-bold">Let's Go</button></div>
+     <div><img src="images/giphy (3).gif" alt="gif" class="h-20 "></div>
 </div>
 </form>
  </section>
@@ -49,22 +50,22 @@
     
 
       <!--footer-->
-      <footer class="bg-gradient-to-r from-purple-600 to-yellow-500 border-4 border-yellow-100 flex  justify-around rounded-lg mx-20 mb-6">
-            <div><img src="images/logo2.jpg" alt="main logo"class=" py-5"></div>
-            <div class="space-y-24 "><ul class="mt-10 text-black-500 font-bold font-mono text-center text-xl pl-10 ">
-                <li>Q&A</li>
-                <li>custemer servece</li>
-            </ul>
-            <dir class=" font-bold text-xs">2021 Aziza. All rights reserved &#128526</dir>
-            </div>
-            <nav>
-               <ul class=" flex border-double border-b-8 border-black mt-20 mb-6 pb-3 ">
-                  <li><a href="https://www.instagram.com/ggamersea/"><img src="images/instagram.png" alt=""class="w-18 h-16 bg-opacity-100"></a></li>
-                  <li><a href="https://twitter.com/GGamersEA"><img src="images/twitter.png" alt="" class="w-20 h-17 pl-3"></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw"><img src="images/youtube.png" alt="" class="w-20 h-17 pl-3"></a></li>
-               </ul>
-            </nav>
-     </footer>
+      <footer class="footer pt-4">
+        <div><img src="images/main loge.png" alt="main logo"class="logo"></div>
+        <div class="space-y-32 mt-3"><ul class="text-purple-400 font-bold font-mono text-center text-xl pl-10 ">
+            <li>Q&A</li>
+            <li>custemer servece</li>
+        </ul>
+        <dir class=" font-bold text-xs">2021 Aziza. All rights reserved &#128526</dir>
+        </div>
+        <nav>
+           <ul class=" flex border-double border-b-8 border-purple-900 mt-10 mb-6 pb-3 ">
+              <li><a href="https://www.instagram.com/ggamersea/"><img src="images/instagram.png" alt=""class="w-18 h-16 bg-opacity-100"></a></li>
+              <li><a href="https://twitter.com/GGamersEA"><img src="images/twitter.png" alt="" class="w-20 h-17 pl-3"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCj4MDiAQyhKW1wAmcntzvWw"><img src="images/youtube.png" alt="" class="w-20 h-17 pl-3"></a></li>
+           </ul>
+        </nav>
+ </footer>
     </body>
     
 </html>
