@@ -6,7 +6,7 @@
 .body-animated{
     margin: 0;
     padding: 0; 
-    background-image: url(images/1.jpg);
+    background-image:url(cssimages/1.jpg);
     background-size: cover;
     background-position: center;
     border: solid;
@@ -45,7 +45,7 @@
 }
 .image{
     
-    background-image: url(images/1.jpg);
+    background-image: url(cssimages/1.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 13rem;
@@ -70,22 +70,22 @@
 }
 @keyframes animate{
     0%{
-        background-image: url(images/1.jpg);
+        background-image: url(cssimages/1.jpg);
     }
     20%{
-        background-image: url(images/2.jpg);
+        background-image: url(cssimages/2.jpg);
     }
     40%{
-        background-image: url(images/3.jpg);
+        background-image: url(cssimages/3.jpg);
     }
     60%{
-        background-image: url(images/4.jpg);
+        background-image: url(cssimages/4.jpg);
     }
     80%{
-        background-image: url(images/5.jpg);
+        background-image: url(cssimages/5.jpg);
     }
     100%{
-        background-image: url(images/6.jpg);
+        background-image: url(cssimages/6.jpg);
     }
 }
 .feature-section{
